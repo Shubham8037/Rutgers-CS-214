@@ -1,0 +1,5 @@
+E:
+This remaining task at hand tests how rapidly malloc works if the pile is filled in a dissipated manner. For instance, it could be 2,2,0,0,1,0,0,0,3,3,3,0,1. This was finished by first populating the 'pile' with arbitrary squares from sizes 1 to 3 500 times. At that point, there was a 1 of every 3 chance that these squares were free'd. At long last, malloc was used to distribute hinders from sizes 1 to 3 into this divided load.
+
+F:
+This outstanding burden tests in the event that we can have memory just allotted as ablock towards the "inside" of the store, and to what extent it takes to free such memory. The outstanding task at hand first loads an arbitrary significantly number of squares of 1 from 1000 to 3000. At that point, it liberates from the edges inwards. On the off chance that we have 3000 squares, it would initially free [0] and [3000], at that point [1] and [2999], etc.

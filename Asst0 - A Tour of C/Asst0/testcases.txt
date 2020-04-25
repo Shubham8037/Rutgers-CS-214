@@ -1,0 +1,104 @@
+testcase00: Simple input
+./pointersorter "test1my2code"
+test
+my
+code
+
+testcase01: Multiple seperators
+./pointersorter "test85my)%code"
+test
+my
+code
+
+testcase02: Empty input
+./pointersorter ""
+
+
+testcase03: Capital letters inclusion
+./pointersorter "A B C a b c"
+C
+B
+A
+c
+b
+a
+
+testcase04: No alphabetical characters
+./pointersorter "69)54%"
+
+testcase05: Less than 2 arguments
+./pointersorter
+Error: There must be two arguments. Ex. ./pointersorter.c example
+
+testcase06: 1 character
+./pointersorter t
+t
+
+testcase07: repeated words
+./pointersorter "c a b c a b"
+c
+c
+b
+b
+a
+a
+
+testcase08: word with both capitals and lowercase letters
+./pointersorter "Hat hat Random WoRds"
+WoRDS
+Random
+Hat
+at
+
+testcase09: repeated words+capital letters+lowercase letters
+./pointersorter "what What Did did the frog say?"
+What
+Did
+what
+the
+say
+frog
+did
+
+testcase10: testcase in assignment example #1
+./pointersorter "thing stuff otherthanstuff blarp"
+thing
+stuff
+otherthanstuff
+blarp
+
+testcase11: testcase in assignment example #2
+./pointersorter "things1she3offers,boom"
+things
+she
+offers
+boom
+
+testcase12: capital > lower case
+./pointersorter "aand,aAnd,Aand,AAnd"
+AAnd
+Aand
+aAnd
+aand
+
+testcase13: Many seperators + Capitals + Lowercase
+./pointersorter 'A!B@C#D$F%AQ^K&L*O(f)w_R+=Wfjoij'
+Wfjoij
+R
+O
+L
+K
+F
+D
+C
+B
+AQ
+A
+w
+f
+
+testcase14: no quotations or ' surround second argument
+./pointersorter axy1desft3ettt
+ettt
+desft
+axy

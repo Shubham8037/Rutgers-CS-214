@@ -1,0 +1,27 @@
+First, client1 is empty that run checkout which will copy the whole project from server to client and create a Manifest file in clients reps.
+
+Than run update, since both are same so already up to date 
+
+Add a new file that run update again, it will tell you all the difference and create a .Update file in its repos 
+
+Than run Upgrade which will do things write in .Update file, like delete extra file in its directory 
+
+Upgrade command will do all the changes written in .Update file
+
+Similarly you can, run commit from client which will make a new .Manifest and compare it with its old .Manifest,
+and increment the version of file if there is any difference, than it compare its new .Manifest with the Server .Maanifest 
+and add all the difference in a .Commit file
+
+Push command will see .Commit file of client and make all the changes possible
+
+Create Command will, create a new project in server
+
+Destroye command will, Destroy the project in server
+
+Add command will add new file in its .Manifest
+
+Remove will remove a file from its .Manifest
+
+History Command will display you all the old Pushes
+
+Roll back will, delete all the new versions of a project expect the oldest version

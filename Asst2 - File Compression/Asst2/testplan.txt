@@ -1,0 +1,17 @@
+step 1. 
+In fileCompressor.c, it anaylizes the file structure using tokenize() function.
+Here the file structure is:
+	asst2/test/blah/text.txt
+	asst2/test/yum.txt
+step 2. 
+According to that file structure, in tokenizer.c file, it reads the files and anaylizes each file.
+Then it generates codebook for huffman code.
+
+step 3.
+The huffman code is generated in huffman.c file.
+
+step 4.
+After doing all file operations, the result is shown to test.txt file:
+	asst2/test.txt
+And according to loop functions, it only takes less than this runtime:
+O(log n).
