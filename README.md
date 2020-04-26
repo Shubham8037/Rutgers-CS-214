@@ -1,5 +1,5 @@
 # Rutgers CS 214
-CS 112 Systems Programming at Rutgers University
+CS 214 Systems Programming at Rutgers University
 
 Professor John-Austen Francisco
 
